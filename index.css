@@ -1,49 +1,126 @@
-.carousel-item img {
-    width: 100% !important;
-    object-fit: cover; /* Ensures images are not stretched and cover the area */
-    object-position: center;
-}
 
-.carrdiv {
-    height: 600px;
-    width: 40%;
-}
 
-.carrinn {
-    height: 600px;
-    width: 100%;
-}
+@media screen and (min-width: 300px) and (max-width: 768px) { 
 
-.padre{
-    display: flex;
-    justify-content: space-between; /* Centra horizontalmente */
-    align-items: center; 
-    margin-top: 50px;
-}
+    .carousel-item img {
+        width: 100% !important;
+        object-fit: cover; /* Ensures images are not stretched and cover the area */
+        object-position: center;
+    }
+    
+    .carrdiv {
+        height: 600px;
+        width: 40%;
+        order: 3;
+        display: none;
+    }
 
-.cont-texto{
-    width: 30%;
-    display: flex;
-    justify-content: center;
-}
+    .carrdiv-cel{
+        margin-top: 10px;
+        height: 350px;
+        width: 100%;
+        order: 3;
+    }
+    
+    .carrinn {
+        height: 350px;
+        width: 100%;
+    }
+    
+    .padre{
+        display: flex;
+        justify-content: space-between; /* Centra horizontalmente */
+        align-items: center; 
+        margin-top: 20px;
+    }
+    
+    .cont-texto{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        order: 1;
+    }
+    
+    .cont-loader{
+        width: 20%;
+        display: flex;
+        justify-content: flex-start;
+        order: 2;
+    }
+    
+    .txt{
+        font-family: Monaco;
+        font-size: 20px;
+        max-width: 100%;
+    }
+    
+    .spinner-border{
+        width: 20px;
+        height: 20px;
+        color: blue;
+    }
+    
+    .txt-insta{
+        margin-top: 15px;
+    }
 
-.cont-loader{
-    width: 30%;
-    display: flex;
-    justify-content: center;
-}
+ }
 
-.txt{
-    font-family: Monaco;
-    font-size: 70px;
-    max-width: 55%;
-}
 
-.spinner-border{
-    width: 100px;
-    height: 100px;
-}
+/* Estilos para Escritorios */
+@media screen and (min-width: 1200px) {
 
-.txt-insta{
-    margin-top: 15px;
-}
+    .carrdiv-cel{
+        display: none;
+    }
+    .carousel-item img {
+        width: 100% !important;
+        object-fit: cover; /* Ensures images are not stretched and cover the area */
+        object-position: center;
+    }
+    
+    .carrdiv {
+        height: 600px;
+        width: 40%;
+    }
+    
+    .carrinn {
+        height: 600px;
+        width: 100%;
+    }
+    
+    .padre{
+        display: flex;
+        justify-content: space-between; /* Centra horizontalmente */
+        align-items: center; 
+        margin-top: 50px;
+    }
+    
+    .cont-texto{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cont-loader{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .txt{
+        font-family: Monaco;
+        font-size: 70px;
+        max-width: 55%;
+    }
+    
+    .spinner-border{
+        width: 100px;
+        height: 100px;
+        color: red;
+    }
+    
+    .txt-insta{
+        margin-top: 15px;
+    }
+  }
